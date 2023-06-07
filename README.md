@@ -29,6 +29,20 @@ To deploy this project on production server
 
 ## Demo
 
-Insert gif or link to demo
+Home Page
 
-https://mega.nz/file/pi5RQSYb#0d1LyCOPWIx2McfyLxBTEvxPMTRB3Hq0WJCdmNIlgNU
+https://github.com/DeepProgram/artetore/blob/screenshot/gif/home_page.gif
+
+Admin Login Page **[Admin Only]**
+
+https://github.com/DeepProgram/artetore/blob/screenshot/gif/admin_login.gif
+
+Admin Operations **[Admin Only]**
+
+https://github.com/DeepProgram/artetore/blob/screenshot/gif/admin_operation.gif
+
+Update/Add Image **[Admin Only]**
+
+https://github.com/DeepProgram/artetore/blob/screenshot/gif/update_image.gif
+
+Delete Image **[Admin Only]**
