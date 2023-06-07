@@ -45,6 +45,7 @@ Admin Login Page **[Admin Only]**
 Admin Operations **[Admin Only]**
 
 ![App Screenshot](https://raw.githubusercontent.com/DeepProgram/artetore/screenshot/gif/admin_operation.gif)
+
 Update/Add Image **[Admin Only]**
 
 ![App Screenshot](https://raw.githubusercontent.com/DeepProgram/artetore/screenshot/gif/update_image.gif)
