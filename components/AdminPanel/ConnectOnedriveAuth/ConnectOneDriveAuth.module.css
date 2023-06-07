@@ -1,0 +1,45 @@
+.successfull{
+    color: #00c7a8 !important;
+}
+
+.formatText{
+    font-size: 2rem !important;
+}
+
+
+.btnContainer{
+    text-align: center;
+}
+
+.sendToServerBtn{
+    border-radius: .3rem;
+    border: none;
+    text-align: center;
+    margin-top: 2rem;
+    text-decoration: none;
+    padding: 0.5rem 0.4rem;
+    cursor: pointer;
+    transition: background 100ms ease-in-out, color 100ms ease-in-out;
+}
+
+.sendToServerBtn:hover{
+    background: #5C2799;
+    color: white;
+}
+
+.retryBtn{
+    margin-top: 2rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: .3rem;
+    border: none;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 100ms ease-in-out, color 100ms ease-in-out;
+}
+
+.retryBtn:hover{
+    background: #166565;
+    color: white;
+}

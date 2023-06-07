@@ -1,0 +1,74 @@
+.checkBox_span{
+    position: absolute;
+    right: 14.7rem;
+}
+
+.filetreeForDelete{
+    width: 100%;
+}
+
+.checkBox_span__image{
+    position: absolute;
+    right: 19.45rem;
+}
+
+.deleteImageContainer{
+    margin-left: 0;
+}
+
+.deleteImageBox{
+    left: 17.5rem;
+}
+
+.deleteImageBox__image{
+    right: 0.25rem;
+}
+
+.showImageIcon__folder{
+    fill: #F7D774;
+    cursor: pointer;
+}
+
+.folderContainer{
+    width: 15rem;
+}
+
+.headerFileName{
+    width: 15rem;
+}
+
+.groupName{
+    background: #ccd1d3;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+}
+
+.folderName{
+    margin-left: 2rem;
+    width: 25rem;
+}
+
+.folderNameContainer{
+    font-family: "Open Sans";
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 23.5rem;
+    width: 25rem;
+    padding: 0.4rem 0.8rem;
+    background: #A0D8B3;
+    border-radius: 0.2rem;
+}
+
+
+.folderIcon{
+    width: 4.5rem;
+}
+
+.expandToggleButton{
+    width: 4rem;
+}
+
+.fileName{
+    width: 15rem;
+}

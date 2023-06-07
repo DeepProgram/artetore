@@ -1,0 +1,125 @@
+.container {
+    font-family: "Open Sans";
+}
+
+.container:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 91%;
+    opacity: 0.3;
+    background-image: url('./../../images/homepagebg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+}
+
+
+.bodyContent {
+    position: relative;
+    width: 100vw;
+    height: 91vh;
+}
+
+.showImages {
+    position: absolute;
+    /*background: red;*/
+    top: 3vh;
+    height: 80vh;
+    left: 4vw;
+    width: 92vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.2rem;
+    justify-content: space-evenly;
+}
+
+.imageBox {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.3rem;
+    width: 12rem;
+    height: 8rem;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.pageChangeContainer {
+    position: absolute;
+    top: 78vh;
+    left: 43vw;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+
+}
+
+.pagination > li {
+    display: inline
+}
+
+.pagination > li > div {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #40513B;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.pagination > li > div:focus, .pagination > li > div:hover {
+    z-index: 2;
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd
+}
+
+.page-item-previous .page-link {
+    margin-left: 0;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+.page-item .page-link{
+    /*margin-left: 0;*/
+}
+
+.page-item-next .page-link {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem
+}
+
+.page-item-active {
+    color: #fff !important;
+    background-color: #40513B !important;
+    border-color: #40513B !important;
+    pointer-events: none !important;
+}
+
+.page-item-disabled {
+    color: #6c757d !important;
+    pointer-events: none !important;
+    background-color: #fff !important;
+    border-color: #dee2e6 !important;
+}
+
+.backdropForHome{
+    top: 9%;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.loaderDotCirclePos{
+    top: 0rem;
+    position: absolute;
+    z-index: 9;
+}

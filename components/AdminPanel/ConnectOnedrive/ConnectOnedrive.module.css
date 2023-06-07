@@ -1,0 +1,378 @@
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.btn{
+    width: 11rem;
+    font-family: "Open Sans";
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.btnConnect{
+    cursor: pointer;
+    background: #bd2020;
+    color: black;
+}
+
+.btnConnect:hover{
+    background: #39bea5;
+}
+
+.refreshBtn{
+    cursor: pointer;
+}
+
+.refreshBtn:hover{
+    background: #5C2799;
+    color: white;
+}
+
+.oneDriveConnected{
+    cursor: not-allowed;
+    background: #39bea5;
+    color: white;
+}
+
+.oneDriveConnecting{
+    cursor: not-allowed;
+    background: #eae732;
+    color: #000000;
+}
+
+.btnNotAvailable{
+    cursor: not-allowed ;
+}
+
+.foldersContainer{
+    margin-top: 1rem;
+    position: absolute;
+    left: 3.35%;
+    width: 93%;
+    height: 75%;
+    /*background: #5C2799;*/
+    max-width: 93%;
+    min-width: 93%;
+    min-height: 75%;
+    max-height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fileChangeHeader{
+    background: #0b499a;
+    padding: 0.4rem 0.6rem;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    border-bottom: 3px solid rgb(5, 255, 185);
+}
+
+.fileChangeHeader__item{
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: "Open Sans";
+    padding: 0.4rem 0.8rem;
+    background: #f5f4f4;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.highlightHeaderItem{
+    background: #00c7a8 !important;
+}
+
+.foldersData{
+    overflow-y: auto;
+    width: 100%;
+    height: 87%;
+    position: absolute;
+    top: 4rem;
+    border: 2px solid rgba(124, 123, 123, 0.75);
+    border-radius: 0.4rem;
+}
+
+.folderNameContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0.5rem;
+}
+
+.folderIcon {
+    width: 2.5rem;
+    fill: #F7D774;
+}
+
+.folderInfoContainer{
+    padding: 0.2rem 0.4rem;
+}
+
+.folders{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f7f7;
+    border-radius: 0.3rem;
+}
+
+.folders__highlighted{
+    background: #c0c0c0 !important;
+}
+
+.folderTraverseContainer{
+    z-index: 1;
+    position: fixed;
+    background: white;
+    width: 91%;
+}
+
+.folderTraverse{
+    margin: 0.4rem 0.4rem 0.8rem 0.4rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+
+.traversingFolderName{
+    font-weight: 700;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    padding: 0.3rem 0.4rem;
+    border-radius: 0.3rem;
+    background: #7b2fd0;
+    color: white;
+    cursor: pointer;
+}
+
+.traversingFolderName__expanded:hover{
+    background: #00c7a8;
+}
+.arrowIcon{
+    width: 20px;
+}
+
+.folderName{
+    cursor: default;
+    font-family: "Open Sans";
+    font-weight: 550;
+}
+
+.openFolder{
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.openText{
+    font-family: "Open Sans";
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.0005rem;
+}
+
+.openFolder__icon{
+    width: 20px;
+
+}
+
+.openFolder:hover, .openText:hover, .openFolder__icon:hover{
+    fill: #007bff;
+    color: #007bff;
+}
+
+.allDatContainer{
+    margin-top: 3.2rem;
+}
+
+.fileContainer{
+    display: flex;
+    padding: 0.4rem 0.4rem;
+    margin: 0.4rem 0.4rem;
+    background: #f7f7f7;
+    border-radius: 0.3rem;
+}
+
+.files{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fileNameContainer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0.7rem;
+}
+
+.fileIcon{
+    fill: #0b499a;
+    width: 20px;
+}
+
+.fileName{
+    font-family: "Open Sans";
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: default;
+}
+
+.downloadFile{
+    cursor: pointer;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.downloadText{
+    font-family: "Open Sans";
+    letter-spacing: 0.00005rem;
+    font-size:0.95rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    transition: color 100ms ease-in-out;
+}
+
+.downloadIcon{
+    width: 20px;
+    transition: fill 100ms ease-in-out;
+}
+
+.downloadFile:hover, .downloadIcon:hover, .downloadText:hover{
+    fill: #007bff;
+    color: #007bff;
+}
+
+.backdrop{
+    position: fixed;
+    z-index: 9;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.syncSpinContainer{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    /*margin-top: 0.5rem;*/
+}
+
+.syncSpinner {
+    width: 22px;
+    height: 22px;
+    border: 3px solid rgba(0, 150, 0, 1);
+     border: 3px solid #000000;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    -webkit-animation: syncSpin 1s linear infinite;
+     animation: syncSpin 1s linear infinite;
+}
+
+@-webkit-keyframes
+syncSpin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes
+syncSpin {
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg)
+  }
+}
+
+
+
+.connectingSpinnerContainer{
+    width: 24px;
+    height: 24px;
+}
+
+.connectingSpinner{
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1.2s;
+  -webkit-animation-name: connectingSpin;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  -moz-transition-property: -moz-transform;
+  -moz-animation-name: connectingSpin;
+  -moz-animation-duration: 1.2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+
+  transition-property: transform;
+  animation-name: connectingSpin;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes connectingSpin {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes connectingSpin {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes connectingSpin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+.serverResponseContainer{
+    margin-top: 0.5rem;
+    display: none;
+    right: 0;
+    position: absolute;
+    float: right;
+}
+
+.serverResponseContainer.show{
+    display: block;
+    animation: notification 400ms ease-in-out forwards;
+}
+
+@keyframes notification {
+    0%{
+        opacity: 0;
+        right: 0;
+    }
+    5%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        right: 2rem;
+    }
+}

@@ -1,0 +1,467 @@
+.backdrop{
+    position: fixed;
+    z-index: 9;
+    /*Z Index Is 9 Because Modal Z-index Is 10. Its Nees To Load Behind Modal*/
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.detailsContainer {
+    --light: hsl(0, 0%, 100%);
+    --background: linear-gradient(to right bottom, hsl(236, 50%, 50%), hsl(195, 50%, 50%));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom, hsl(236, 50%, 98%), hsl(236, 50%, 94%));
+
+}
+
+.modalContainer {
+    top:5rem;
+    position: fixed;
+    z-index: 10;
+    left: 12%;
+    width: 55vw;
+    height: 85vh;
+}
+
+.modalContainer__addedImageList{
+    top: 7rem;
+}
+
+
+.modalContainer:target {
+    display: flex;
+}
+
+.modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    left: 18vw;
+    top: 15vh;
+    height: 40vh;
+    width: 40vw;
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    color: var(--light);
+    background: var(--background);
+    box-shadow: .4rem .4rem 2.4rem .2rem hsla(236, 50%, 50%, 0.3);
+    position: relative;
+}
+
+.modal__forAddedImageList{
+    left: 10vw;
+    top: 6vh;
+    height: 70vh;
+    width: 55vw;
+    background: #dedede;
+}
+
+.btn-modal-close{
+    position: relative;
+    padding-right: 0;
+    float: right;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid hsla(0, 0%, 100%, .4);
+    border-radius: 100rem;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    transition: .2s;
+}
+.btn-modal-close::before{
+    content: '×';
+    transform: translateY(-.2rem);
+}
+
+.btn-modal-close:hover,
+.btn-modal-close:focus{
+    cursor: pointer;
+    border-color: hsla(0, 0%, 100%, .6);
+    transform: translateY(-.2rem);
+    color: black;
+}
+
+.modal__details {
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.modal__title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #d90606;
+}
+
+.socialNetwork{
+    margin-top: 2rem;
+    display: flex;
+    /*gap: 4rem;*/
+    justify-content: space-between;
+}
+
+.refreshBtn{
+    border: none;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    float: right;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: color 100ms ease-in-out, background 100ms ease-in-out;
+}
+
+.refreshBtn:hover{
+    color: white;
+    background: #00c7a8;
+}
+
+.socialUrlContainer{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1rem;
+    border: 2px solid rgb(255,255,255);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: border 250ms ease-in-out, color 250ms ease-in-out, font-weight 250ms ease-in-out;
+}
+
+
+.youtubeUrlContainer:hover{
+    border: 2px solid rgb(171, 255, 71);
+    color: black;
+    font-weight: 700;
+}
+
+
+.facebookUrlContainer:hover{
+    border: 2px solid rgb(199, 7, 199);
+    color: black;
+    font-weight: 700;
+}
+
+.artetoreYT {
+    background-image: url("./../../../images/yt.png");
+    background-size: 2.1rem;
+    height: 2.1rem;
+    width: 2.1rem;
+    background-repeat: no-repeat;
+    transition: height 250ms ease-in-out, width 250ms ease-in-out, background-size 250ms ease-in-out;
+}
+
+.artetoreFB {
+    background-image: url("./../../../images/fb.png");
+    background-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    background-repeat: no-repeat;
+    transition: height 250ms ease-in-out, width 250ms ease-in-out, background-size 250ms ease-in-out;
+}
+
+.modalBody__forCreateFolder{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+.modalInput{
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.modalTitle__addNewFolder{
+    text-align: center;
+    color: #00c7a8;
+}
+
+
+
+.modalBtnContainer{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.submitBtn{
+    cursor: pointer;
+    padding: 0.3rem 1.4rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+.submitBtn:hover{
+    background: #166565;
+    color: white;
+}
+
+.cancelBtn{
+    cursor: pointer;
+    padding: 0.3rem 1.4rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+.cancelBtn:hover{
+    background: #da2d2d;
+    color: #000000;
+}
+.modalBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+.nameContainer{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.previousName{
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: black;
+}
+.deleteConfirmation{
+    margin-top: -0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.deleteConfirmText{
+    font-weight: 600;
+    color: #c50606;
+    font-size: 1.3rem;
+}
+
+.deletionFolderName{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.modal__big{
+    overflow-x: hidden;
+    overflow-y: auto;
+    left: 3vw;
+    top: 7vh;
+    height: 73vh;
+    width: 70vw;
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    color: var(--light);
+    background: var(--background);
+    box-shadow: .4rem .4rem 2.4rem .2rem hsla(236, 50%, 50%, 0.3);
+    position: relative;
+}
+.modal__title_upload{
+    font-family: "Open Sans";
+    text-align: center;
+    font-size: 2rem;
+}
+.fileUploadContainer{
+    margin-bottom: 2rem;
+}
+
+.fileInput input{
+    opacity: 0;
+    position: absolute;
+}
+.fileInput label{
+    cursor: pointer !important;
+    position: relative;
+    border: 1px dashed #000000;
+    border-radius: 6px;
+    height: 19rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    text-align: center;
+}
+.dropFile{
+    display: block;
+    font-weight: 600;
+    color: #07074d;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.dropFileOr{
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    display: block;
+    margin-bottom: 8px;
+}
+.browse{
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    display: inline-block;
+    padding: 8px 28px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.dragActive{
+    background: linear-gradient(to right bottom, hsl(238, 71%, 39%), hsl(195, 100%, 24%)) !important;
+}
+.uploadListContainer{
+    overflow-y: auto;
+    margin-bottom: 1.5rem;
+    height: 70%;
+}
+
+.uploadedFile{
+    background: #0c1a1a;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.uploadFileName{
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.uploadFileRight {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.fileSize{
+    color: whitesmoke;
+}
+
+.crossIcon{
+    width: 15px;
+    height: 20px;
+    fill: white;
+    cursor: pointer;
+}
+
+.crossIcon:hover{
+    fill: red;
+}
+
+.fileUploadSuccessIconContainer{
+    width: 24px;
+    height: 24px;
+}
+.fileUploadSuccessIcon{
+    color: rgb(16, 183, 155);
+}
+.redirectionText{
+    font-weight: 600;
+    text-align: center;
+    color: #166565;
+}
+
+.modal__forProperties{
+    left: 12vw;
+    top: 6vh;
+    height: 75vh;
+    width: 55vw;
+}
+
+.modalBody__forProperties{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.propertiesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.propertiesItem{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.itemName{
+    font-family: "Open Sans";
+
+}
+.itemValue{
+    font-family: "Open Sans";
+    font-weight: 550;
+    color: black;
+}
+
+.propertiesModalTitle{
+    color: #151e15;
+    padding-bottom: 4px;
+    border: 2px none #480048;
+    border-bottom-style: solid;
+}
+
+.bottomBtn{
+    border: none;
+    font-family: "Open Sans";
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: hover 250ms ease-in-out;
+}
+
+.closeBtn{
+    background: #da2d2d;
+}
+
+
+
+.sendBtn{
+    background: #166565;
+}
+
+.addedImageListContent{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 20rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.addedImageListBtnContainer{
+    position: relative;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.addedImageFolder{
+    color: black;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.errorModalRefreshBtn{
+    display: flex;
+    justify-content: center;
+}

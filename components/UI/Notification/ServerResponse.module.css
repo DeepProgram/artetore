@@ -1,0 +1,42 @@
+.fa {
+  padding-top: 9px;
+}
+.b {
+  background: #fff;
+  height:40px;
+  width:40px;
+  color: #c95e58;
+  border-radius: 100%;
+  font-size:20px;
+  text-align:center;
+  margin-right:24px;
+}
+.error {
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  background:#c95e58;
+  color: white;
+  padding:12px 30px 12px 20px;
+  display:inline-block;
+  font-family:sans-serif;
+  position:relative;
+  width:350px;
+}
+.p {
+  position:absolute;
+  right:5px;
+  top:5px;
+  padding-right:5px;
+}
+
+.success {
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  background:#4abf7d;
+  color: white;
+  padding:12px 30px 12px 20px;
+  display:inline-block;
+  font-family:sans-serif;
+  position:relative;
+  width:350px;
+}

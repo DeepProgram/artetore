@@ -1,0 +1,235 @@
+
+.gradiantContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.gradiantContainer:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 91%;
+    opacity: 0.25;
+    background-image: url('./../../images/imageview_background.jpg');
+    background-repeat: no-repeat;
+    background-size: inherit;
+}
+
+.imageViewCloseBtn {
+    position: absolute;
+    right: 2rem;
+}
+
+.imageViewContainer {
+    position: absolute;
+    width: 96vw;
+    left: 2vw;
+    top: 12vh;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    padding: 0.5rem 2rem;
+    gap: 2rem;
+    justify-content: center;
+    /*background: red;*/
+}
+
+.leftContainer {
+    grid-column: 1/8;
+    max-width: 75vw;
+}
+
+.rightContainer {
+
+    grid-column: 8/9;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.imageTitle {
+    position: relative;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-family: "Open Sans";
+}
+
+.showImages {
+    display: flex;
+    gap: 1rem;
+}
+
+.imageBox {
+    position: relative;
+    border: 3px solid #597756;
+    border-radius: 4px;
+    padding: 0.3rem;
+    width: 55vw;
+    height: 76vh;
+}
+
+.showFullImage {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.allImages {
+    /*background: #8fa8b4;*/
+    position: relative;
+    /*border: 3px solid #0b499a;*/
+    border-radius: 4px;
+    height: 76vh;
+    /*width: 13vw;*/
+    overflow: scroll;
+}
+
+.allImages::-webkit-scrollbar {
+    display: none;
+}
+
+.smallImageBox {
+    margin-top: 0.05rem;
+    margin-bottom: 0.05rem;
+    /*height: 19vh;*/
+    cursor: default;
+}
+
+
+.showSmallImage {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+
+.downloadButton {
+    width: 15rem;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #39bea5;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+
+}
+
+.downloadButton:hover {
+    box-shadow: 0px 0px 10px 2px rgba(45, 255, 196, 0.78);
+    color: white;
+}
+
+.fileExtension {
+    padding: 0.2rem 0.5rem;
+    width: 4.8rem;
+    border-radius: 4px;
+    height: 2rem;
+}
+
+.fileExtensionOption {
+    position: absolute;
+    padding: 50px 0;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.btn-close {
+    z-index: 100;
+    position: relative;
+    padding-right: 0;
+    float: right;
+    top: 1rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid hsla(0, 0%, 100%, .4);
+    border-radius: 100rem;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: .2s;
+    background: black;
+    cursor: pointer;
+
+}
+
+.btn-close::before {
+    content: '×';
+    /*transform: translateY(-.4rem);*/
+    /*cursor: pointer;*/
+}
+
+.btn-close:hover,
+.btn-close:focus {
+    /*cursor: pointer;*/
+    border-color: hsl(176, 93%, 43%);
+    transform: translateY(-.2rem);
+    color: white;
+    background: #39bea5;
+    font-weight: bold;
+}
+
+.btnDisabled {
+    cursor: not-allowed;
+    background: #afafaf;
+    color: #737373;
+}
+
+.btnDisabled:hover {
+    box-shadow: none;
+    color: #737373;
+}
+
+.downloadContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.downloadRequestContainer {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.downloadNowContainer {
+    width: 15rem;
+    height: 8rem;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    border: 2px dotted #007bff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.downloadNowContainer__fileReadyText {
+    font-family: "Open Sans";
+    font-weight: 600;
+
+}
+
+.downloadNowContainer_downloadBtn {
+    font-family: "Open Sans";
+    font-weight: 700;
+    background: #00c7a8;
+    color: black;
+    padding: 0.4rem 1rem;
+    border-radius: 0.3rem;
+}
