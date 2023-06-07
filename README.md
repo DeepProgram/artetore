@@ -31,20 +31,19 @@ To deploy this project on production server
 
 Home Page
 
-https://raw.githubusercontent.com/DeepProgram/artetore/screenshot/gif/home_page.gif
+![App Screenshot](https://raw.githubusercontent.com/DeepProgram/artetore/screenshot/gif/home_page.gif)
 
 Admin Login Page **[Admin Only]**
 
-https://raw.githubusercontent.com/DeepProgram/artetore/screenshot/gif/admin_login.gif
+![App Screenshot](https://raw.githubusercontent.com/DeepProgram/artetore/screenshot/gif/admin_login.gif)
 
 Admin Operations **[Admin Only]**
 
-https://raw.githubusercontent.com/DeepProgram/artetore/screenshot/gif/admin_operation.gif
-
+![App Screenshot](https://raw.githubusercontent.com/DeepProgram/artetore/screenshot/gif/admin_operation.gif)
 Update/Add Image **[Admin Only]**
 
-https://raw.githubusercontent.com/DeepProgram/artetore/screenshot/gif/update_image.gif
+![App Screenshot](https://raw.githubusercontent.com/DeepProgram/artetore/screenshot/gif/update_image.gif)
 
 Delete Image **[Admin Only]**
 
-https://raw.githubusercontent.com/DeepProgram/artetore/screenshot/gif/delete_image.gif
+![App Screenshot](https://raw.githubusercontent.com/DeepProgram/artetore/screenshot/gif/delete_image.gif)
