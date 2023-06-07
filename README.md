@@ -4,6 +4,9 @@
 Frontend For Showing Different Arts And Design
 
 
+## Backend
+Setup the backend first to run the frontend properly
+[Artetore Backend API](https://github.com/DeepProgram/artetoreAPI)
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your **.env.local**  file
@@ -17,13 +20,15 @@ To run this project, you will need to add the following environment variables to
 To deploy this project on development server
 
 ```bash
+  npm install
   npm run dev
 ```
 To deploy this project on production server
 
 ```bash
-  nom run build
-  npm run dev
+  npm install
+  npm run build
+  npm run start
 ```
 
 
